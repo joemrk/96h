@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewData["Title"] = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+</style>
+
+<div class="auth-wrap el-shadow">
+    <form method="post" asp-action="Login" asp-controller="AutorisationController">
+        <div class="login-form">
+            <input type="text" name="Name" class="auth-name" placeholder="Логін" />
+            <input type="text" name="Pass" class="auth-pass" placeholder="Пароль" />
+            <input type="submit" value="Увійти" />
+            <a asp-action="Index" asp-controller="Home">Я відвідувач </a>
+        </div>
+    </form>
+    @TempData["authMess"]
+</div>

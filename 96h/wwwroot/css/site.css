@@ -1,0 +1,140 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
+}
+
+* {
+    outline: none;
+    text-decoration: none;
+}
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.border-top {
+    border-top: 1px solid #e5e5e5;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+    font-size: 1rem;
+    line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+    background-color: #f7f7f7
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+    line-height: 60px; /* Vertically center the text there */
+}
+
+/*=======================================*/
+.child-linc,
+a {
+    color: #1185C6;
+    cursor: pointer;
+    transition: .2s
+}
+
+    .child-linc:hover,
+    a:hover {
+        color: #1A435A;
+        text-decoration: none;
+    }
+
+.child {
+    margin-bottom: 20px;
+}
+
+.el-shadow {
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, .05);
+}
+
+.login-form {
+    width: 300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+   
+
+input {
+    margin-bottom: 20px;
+    width: 200px;
+    height: 36px;
+    letter-spacing: 1px;
+}
+
+    input[type=text] {
+        border: none;
+        border-bottom: 1px solid rgba(0,0,0,.3);
+        background-color: inherit
+    }
+
+    input[type=submit],
+    input[type=button] {
+        width: 150px;
+        border: none;
+        border: 2px solid #000;
+        background-color: #fff;
+        color: #000;
+        transition: .2s
+    }
+
+        input[type=submit]:hover,
+        input[type=button]:hover {
+            border: 2px solid #fff;
+            background-color: #000;
+            color: #fff;
+        }
+.search-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-item,
+.founder-summ {
+    margin-bottom: 10px
+}

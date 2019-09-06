@@ -1,0 +1,63 @@
+﻿@model _96h.Models.Communication
+
+@{
+    ViewData["Title"] = "Communications";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<br />
+<br />
+<div class="search-wrap col-12">
+    <input type="text" id="search_text" maxlength="8" placeholder="ЄДРПОУ" />
+    <input type="button" id="communications_search_btn" value="Пошук" />
+</div>
+<br />
+<br />
+<br />
+
+<div class="communications-wrap col-12">
+    <div class="col">
+        @TempData["homeMess"]
+    </div>
+    @if (Model != null)
+    {
+        {
+            ViewData["Title"] = @Model.COMPANY.name;
+        }
+        <h2>@Model.COMPANY.name</h2>
+        <hr />
+        <div class="communications row">
+            <div class="director col">
+                <h4>Директор:</h4>
+                <div class="child el-shadow">
+                    @Model.DIRECTOR.name
+                    <hr />
+                    @foreach (var child in Model.DIRECTOR.children)
+                    {
+                        <span class="child-linc" data-edrpou=@child.edrpou>@child.name </span> <br />
+                    }
+                </div>
+
+            </div>
+            <div class="founders col">
+                <h4>Засновники:</h4>
+                @foreach (var founder in Model.FOUNDERS)
+                {
+                    <div class="child el-shadow">
+                        @founder.name
+                        <hr />
+                        @foreach (var child in founder.children)
+                        {
+                            <span class="child-linc" data-edrpou=@child.edrpou>@child.name </span><br />
+                        }
+                    </div>
+                }
+            </div>
+
+        </div>
+    }
+</div>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/js/site.js"></script>
+
