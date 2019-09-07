@@ -70,7 +70,6 @@ namespace _96h.Controllers
 
 
 
-
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

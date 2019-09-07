@@ -33,7 +33,7 @@
         }
     });
 
-    $('.communications-wrap').on('click', '.child-linc', function () {
+    $('.communications-wrap').on('click', '.child-link', function () {
         let edrpou = $(this).data('edrpou');
         getCommunication('/communications/', edrpou, communication);
     });
@@ -44,4 +44,6 @@
             loadFlag = true;
         });
     }
+    //===============Cy
+
 });

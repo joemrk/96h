@@ -64,7 +64,8 @@ body {
 }
 
 /*=======================================*/
-.child-linc,
+.scheme-link,
+.child-link,
 a {
     color: #1185C6;
     cursor: pointer;
@@ -137,4 +138,11 @@ input {
 .info-item,
 .founder-summ {
     margin-bottom: 10px
+}
+
+#cy {
+    border: 1px solid #c3c3c3;
+    background-color: #fff;
+    width: 100%;
+    height: 600px
 }
